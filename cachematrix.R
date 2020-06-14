@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+# This first function, makeCacheMatrix creates a vector entered by the user.
+#It essentially, sets and gets the value of the vector as entered.
+#It also sets and gets the inverse of the entered vector.
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
@@ -18,7 +17,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The function below calculates the inverse of the vector replicated above.
+## It first checks if the vector's inverse has already been calculated, if so it skips
+## the calculation. Otherwise, it proceeds with the calculation using solve.
 
 cacheSolve <- function(x, ...) {
         i <- x$getinverse()
